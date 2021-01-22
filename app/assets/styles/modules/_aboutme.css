@@ -1,0 +1,77 @@
+.aboutMe {
+  h1 {
+    font-family: "Montserrat";
+    text-align: center;
+    margin: 25px auto 0 auto;
+    color: rgb(253, 128, 151);
+  }
+  a {
+    color: rgb(253, 128, 151);
+  }
+  &__text {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: 3.5px;
+    line-height: 40px;
+    font-size: 17px;
+    transition: opacity 1s;
+  }
+
+  &__text[data-scroll="out"] {
+    opacity: 0;
+  }
+  &__text[data-scroll="in"] {
+    opacity: 1;
+  }
+  &__flex {
+    padding: 100px 0;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__koala {
+    width: 500px;
+    height: 600px;
+    border-radius: 30%;
+  }
+}
+
+.flex2Right {
+  justify-content: center;
+  align-items: center;
+  h1 {
+    padding-top: 15px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .aboutMe__flex {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media (max-width: 880px) {
+  .aboutMe__flex {
+    flex-direction: column;
+    width: 100%;
+  }
+  .aboutMe__text {
+    width: 90%;
+    margin-top: 80px;
+  }
+}
+@mixin atSmall {
+  .aboutMe__koala {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}

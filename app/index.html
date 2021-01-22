@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexander Tisko</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+    rel="stylesheet"
+  />
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+  </head>
+  <body>
+    <div class="menuOriginal">
+      <nav class="menu" id="menu">
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <h2></h2>
+        <ul class="menu-links">
+          <li><a class="one" href="/">Inicio</a></li>
+          <li><a class="two" href="#portafolio">Portfolio</a></li>
+          <li><a class="three" href="#experience">Experiencia</a></li>
+          <li><a class="four" href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="home">
+      <div class="home__name">
+        <h1>Alexander Tisko</h1>
+        <h2 class="home__subName">"Always keep learning"</h2>
+      </div>
+      
+    </div>
+    <div class="aboutMe">
+      <div class="aboutMe__flex">
+        <div class="flex2Left">
+          <img class="aboutMe__koala" src="./assets/images/koala.jpg" />
+        </div>
+        <div class="flex2Right">
+          <p class="aboutMe__text">
+            Mi nombre es <a>Alexander Tisko</a>, soy de Buenos Aires,
+            Argentina. Tengo 24 años y mi hobbie es la programación.
+            Soy estudiante de la carrera de Ingeniería Industrial, estoy a
+            mitad de la carrera aprox.
+          </p>
+          <div class="space"></div>
+          <p class="aboutMe__text"">Tranqui, el koala no soy yo, simplemente es una lindo foto... Aunque pensandolo bien, quizá los domingos de mañana puedo serlo.</p>
+          <h1>亚利克斯</h1> 
+        </div>
+      </div>
+    </div>
+    <div class="cv" id="portafolio">
+      <h1 class="cv__title">Portfolio</h1>
+      <div class="cv__feed">
+        <div class="card">      
+          <a class="cv__links" href="https://mimi-social.herokuapp.com/">Mimi Social</a>
+         
+        </div>
+        <div class="card card2">
+          <a class="cv__links" href="https://mimi-social.herokuapp.com/">Guess the number</a>
+          
+          
+         
+        </div>
+    </div>
+    </div>
+    <div class="parallax"></div>
+    <div class="experience" id="experience">
+      <h1 class="experience__title">Experiencia</h1>
+      <div class="experience__items">
+        <div class="experience__sections experience__sections-left">
+          <h2>Cognizant</h2>
+        <h3>Google My Business analyst junior</h3>
+        <p>Octubre 2019 - actualidad</p>
+        </div>
+        <div class="experience__sections experience__sections-right">
+          <h2>Friction Marketing Company</h2>
+          <h3>Operative senior</h3>
+          <p>Enero 2016 - Agosto 2016</p>
+          <p>United Kingdom</p>
+        </div>
+        <div class="experience__sections experience__sections-left">
+          <h2>Fiction Tech Supply, Alimentos Granix, CEAPE</h2>
+          <h3>Trabajos de verano</h3>
+          <p>Verano 2015, 2018 y 2019</p>
+        </div>
+        <div class="experience__sections experience__sections-right">
+          <h2>Friction Marketing Company</h2>
+          <h3>Representante de empresa en Perumin</h3>
+          <p>Septiembre 2019 - Perú</p>
+        </div>
+        <div class="experience__sections experience__sections-left">
+          <h2>HTML & CSS</h2>
+          <h3>Udemy</h3>
+          <p>Curso completado</p>
+          <a href="http://ude.my/UC-b9cc2d62-294b-4ba8-8f49-35f3b8f915b3">Certificado</a>
+        </div>
+        <div class="experience__sections experience__sections-right">
+          <h2>Mastering the modern workflow</h2>
+          <h3>Udemy</h3>
+          <p>Curso completado</p>
+          <a href="http://ude.my/UC-60c59c0e-5ab5-4b32-b65d-a6d8c0011ff3">Certificado</a>
+        </div>
+        <div class="experience__sections experience__sections-left">
+          <h2>JavaScript: full-stack</h2>
+          <h3>Curso completado</h3>
+          <a href="http://ude.my/UC-c9369fbe-2aa2-4b39-ab8f-f3accd446554">Certificado</a>
+        </div>
+        <div class="experience__sections experience__sections-right deletePadding">
+          <h2>Programación</h2>
+          <p>Node.js, Github, Html, Css, Javascript, MongoDb, MySql </p>
+        </div>
+      </div>
+    </div>
+    <div class="formulario" id="contact">
+      <h1 class="formTitulo">Contacto</h1>
+      <div class="flex">
+        <div class="formContact">
+          <p>
+            <img class="formLogos" src="./assets/images/email.png" /> info@alexandertisko.com
+          </p>
+          <p><img class="formLogos" src="./assets/images/phone.png" /> +5491123898579</p>
+          <p>
+            <img class="formLogos" src="./assets/images/location.png" /> Trabajo remoto - Bs As
+          </p>
+        </div>
+        
+        <div class="formBtnContact">
+          <a href="#contact">
+           ¡Escribeme!
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footerStyle footerStyleForm">
+      <p class="copy">
+        &copy; Derechos reservados a <a href="#home">Alexander Tisko</a>
+      </p>
+    
+    </div>
+ 
+  <script>ScrollOut({
+    targets:
+      ".experience__sections-right, .experience__sections-left, .aboutMe__text",
+    threshold: 0.6,
+  });</script>
+    <script src="bundled.js"></script>
+  </body>
+</html>

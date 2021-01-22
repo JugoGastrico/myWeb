@@ -1,0 +1,22 @@
+@define-mixin atIphone5 {
+  @media (max-width: 320px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atSmall {
+  @media (max-width: 540px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atMedium {
+  @media (max-width: 880px) {
+    @mixin-content;
+  }
+}
+@define-mixin Ipad {
+  @media (max-width: 1024px) {
+    @mixin-content;
+  }
+}

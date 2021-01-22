@@ -1,0 +1,120 @@
+.experience {
+  margin: 0 auto;
+  width: 55%;
+  padding-bottom: 80px;
+  &__title {
+    padding: 100px;
+    letter-spacing: 5px;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(253, 128, 151);
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__sections {
+    display: flex;
+    flex-direction: column;
+  }
+  &__sections a {
+    color: rgb(253, 128, 151);
+  }
+  &__sections h2 {
+    border-bottom: 2px solid rgba(253, 128, 151, 0.356);
+    margin-bottom: 15px;
+  }
+  &__sections h3 {
+    margin-bottom: 8px;
+  }
+  &__sections-right {
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    transition: opacity 1s, transform 500ms;
+    border-right: 2px solid yellow;
+    padding-right: 10px;
+  }
+  &__sections-left {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    transition: opacity 1s, transform 500ms;
+    padding-left: 10px;
+    border-left: 2px solid yellow;
+  }
+  &__sections-right[data-scroll="out"] {
+    opacity: 0;
+    transform: translateX(-600%) scale(0.4);
+  }
+  &__sections-right[data-scroll="in"] {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+  }
+  &__sections-left[data-scroll="out"] {
+    opacity: 0;
+    transform: translateX(600%) scale(0.4);
+  }
+  &__sections-left[data-scroll="in"] {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+  }
+}
+
+@media (max-width: 1350px) {
+  .experience {
+    width: 80%;
+    &__sections {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .experience__sections-right[data-scroll="out"] {
+    opacity: 0;
+    transform: none;
+  }
+  .experience__sections-right[data-scroll="in"] {
+    opacity: 1;
+    transform: none;
+  }
+  .experience__sections-left[data-scroll="out"] {
+    opacity: 0;
+    transform: none;
+  }
+  .experience__sections-left[data-scroll="in"] {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-witdh: 880px) {
+  .experience {
+    padding-bottom: 240px;
+    width: 90%;
+    &__sections {
+      margin-bottom: 110px;
+    }
+  }
+}
+@mixin atSmall {
+  .experience {
+    width: 92%;
+  }
+  .experience__title {
+    font-size: 30px;
+  }
+  .experience__title {
+    padding: 50px;
+  }
+
+  .experience__sections {
+    margin-bottom: 70px;
+    font-size: 13px;
+  }
+  .deletePadding {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}

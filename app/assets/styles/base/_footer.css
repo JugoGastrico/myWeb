@@ -1,0 +1,26 @@
+.footerStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d0d0d;
+  padding: 15px 0;
+}
+
+.copy {
+  font-size: 13px;
+  color: white;
+  a {
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(253, 128, 151);
+  }
+}
+.space {
+  padding: 15px;
+}
+@media (max-width: 540px) {
+  .space {
+    padding: 0;
+  }
+}
